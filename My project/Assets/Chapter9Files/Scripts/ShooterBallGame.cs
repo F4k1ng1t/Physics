@@ -33,7 +33,7 @@ public class ShooterBallGame : MonoBehaviour
 
         Time.fixedDeltaTime = 0.001f;
 
-        AudioProcessor processor = FindObjectOfType<AudioProcessor>();
+        AudioProcessor processor = FindFirstObjectByType<AudioProcessor>();
         //processor.onBeat.AddListener(OnBeatDetected);
         StartCoroutine(Shoot());
     }
